@@ -208,7 +208,7 @@ class board:
         js = self.grid
 
         js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
-        return j
+        return js
 
     # colDir of -1 means to decrease the colIndex as you search
     # rowDir of 1 means to increase the rowIndex as you search
