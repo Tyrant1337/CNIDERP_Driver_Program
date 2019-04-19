@@ -1,0 +1,5 @@
+Connect Four - Python
+Traceback (most recent call last):
+  File "connect-four-naive.py", line 10, in <module>
+    width = int(sys.argv[4]) # --width <w>
+IndexError: list index out of range
