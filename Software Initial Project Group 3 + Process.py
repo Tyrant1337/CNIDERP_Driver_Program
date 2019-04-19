@@ -1,33 +1,31 @@
-# coding: utf-8
-
-# In[12]:
-
-
-import random
 import json
-from subprocess import Popen, PIPE, STDOUT
-from sys import executable
+from subprocess import Popen, PIPE
+from sys import executable, argv
 
 
-# In[15]:
-
-
-class game:
+class Game:
     def __init__(self, height, width, goal):
-        self.gBoard = board(height, width, goal)
+        # pass as argument for player program file
+        # self.playerfile = playerfile
+        self.gBoard = Board(height, width, goal)
         self.height = height
         self.width = width
         self.goal = goal
+        self.p1error = open("player1error.txt", "w")
+        self.p2error = open("player2error.txt", "w")
 
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
     def playTurn(self, playerNum):
         # get the move from the player (currently just randomly generates a valid column)
         colIndex = self.getMove(playerNum)
+
         # add the move to the board, which returns the row it was placed
         rowIndex = self.gBoard.makeMove(colIndex, playerNum)
+
         # print the board to the screen
         self.gBoard.printBoard()
+
         # check if there is a win
         if self.gBoard.checkIfWon(rowIndex, colIndex, playerNum):
             # indicate the player won
@@ -46,13 +44,14 @@ class game:
     def playGame(self):
         # initalize turnCode
         turnCode = 0
-        
+
         # player 1 goes first
         turn = 1
         # continuously loop until game ends
         while (True):
             # play the turn, which returns the turn code
             turnCode = self.playTurn(turn)
+
             # if it's 1 or 2, that player won
             if turnCode == 1:
                 print("Player 1 wins")
@@ -79,12 +78,12 @@ class game:
         player1 = Popen(
             [executable, "connect-four-group4.py", "1", "1", str(self.width), str(self.width), str(self.height),
              str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=p1error)
+            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
 
         player2 = Popen(
             [executable, "connect-four-group4.py", "2", "2", str(self.width), str(self.width), str(self.height),
              str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=p2error)
+            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
         players = player1, player2
         turn -= 1
 
@@ -114,7 +113,7 @@ class game:
         return False
 
 
-class board:
+class Board:
     # initalizes board
     # height = # of rows
     # width = # of columns
@@ -122,13 +121,9 @@ class board:
     def __init__(self, height, width, goal):
         self.grid = {}
         self.grid["grid"] = [[0] * height for i in range(width)]
-
         self.height = height
         self.width = width
         self.goal = goal
-        # initialize grid at correct width and height
-        # self.grid = [[0 for x in range(height)] for y in range(width)]
-        # set player 1 to go first
 
 
     # check if grid has no spots left
@@ -145,9 +140,9 @@ class board:
     # calls checkVertical, checkHorizontal, and checkDiagonal
     # if any return true, return true. If not, return false
     def checkIfWon(self, newRowIndex, newColIndex, playerNum):
-        if self.checkVertical(newRowIndex, newColIndex, playerNum) or self.checkHorizontal(newRowIndex, newColIndex,
-                                                                                           playerNum) or self.checkDiagonal(
-                newRowIndex, newColIndex, playerNum):
+        if self.checkVertical(newRowIndex, newColIndex, playerNum) or \
+                self.checkHorizontal(newRowIndex, newColIndex, playerNum) or \
+                self.checkDiagonal(newRowIndex, newColIndex, playerNum):
             return True
         return False
 
@@ -176,9 +171,8 @@ class board:
     # calls checkLeftUp2DownRight and checkLeftDown2RightUp
     # if either returns true, return true, otherwise return false
     def checkDiagonal(self, newRowIndex, newColIndex, playerNum):
-        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or self.checkLeftDown2RightUp(newRowIndex,
-                                                                                                         newColIndex,
-                                                                                                         playerNum):
+        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or \
+                self.checkLeftDown2RightUp(newRowIndex, newColIndex, playerNum):
             return True
         return False
 
@@ -233,14 +227,6 @@ class board:
         print()
 
 
-    # # convert the board to a json
-    # def getBoardAsJSON(self):
-    #     js = self.grid
-    #
-    #     js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
-    #     return js
-
-
     # colDir of -1 means to decrease the colIndex as you search
     # rowDir of 1 means to increase the rowIndex as you search
     def checkDirection(self, newRowIndex, newColIndex, colDir, rowDir, playerNum):
@@ -260,15 +246,11 @@ class board:
         return self.goal - 1
 
 
-p1error = open("player1error.txt", "w")
-p2error = open("player2error.txt", "w")
+# playerfile = str(argv[0])
 
 height = 6
 width = 7
 goal = 4
 
-newGame = game(height, width, goal)
+newGame = Game(height, width, goal)
 newGame.playGame()
-
-p1error.close()
-p2error.close()
