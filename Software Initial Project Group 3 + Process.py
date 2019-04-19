@@ -13,16 +13,12 @@ from sys import executable
 
 
 class game:
-
     def __init__(self, height, width, goal):
         self.gBoard = board(height, width, goal)
-        # start the 2 player processes here
-
-
         self.height = height
         self.width = width
         self.goal = goal
-        # save any necessary variables for the player processes here
+
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
     def playTurn(self, playerNum):
@@ -45,12 +41,12 @@ class game:
             # indicate there is no win yet
             return 0
 
+
     # this is called once to play the game
     def playGame(self):
-
-
         # initalize turnCode
         turnCode = 0
+        
         # player 1 goes first
         turn = 1
         # continuously loop until game ends
@@ -75,17 +71,10 @@ class game:
                 else:
                     turn = 1
 
-    def draw_grid(self):
-        print()
-        for y in range(self.height):
-            for x in range(0, self.width):
-                print(self.gBoard.grid["grid"][x][y], end=' '),
-            print()
 
     # this gets the move from the player whose turn it is
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
-
     def getMove(self, turn):
         player1 = Popen(
             [executable, "connect-four-group4.py", "1", "1", str(self.width), str(self.width), str(self.height),
@@ -103,23 +92,18 @@ class game:
             # send current board to player on stdout
             myboard = json.dumps(self.gBoard.grid)
             myboard = (myboard + '\n').encode("utf-8")
-
             players[turn].stdin.write(myboard)
             players[turn].stdin.flush()
-
-            # self.draw_grid()
-
-            # self.gBoard.printBoard()
 
             # get move from player program
             move = json.loads(players[turn].stdout.readline())
             move = int(move["move"])
             print("Player " + str(turn + 1) + " move: " + str(move))
-            # # generate a random number in bounds (will be replaced by getting a move from the player process)
-            # ranNum = random.randint(0, self.gBoard.width - 1)
-            # # check if number is
+
+            # check if move is valid, return move if it's good
             if self.checkIfValid(move):
                 return move
+
 
     # tests whether move sent to driver is valid
     # returns true if valid and false otherwise
@@ -130,11 +114,7 @@ class game:
         return False
 
 
-# In[14]:
-
-
 class board:
-
     # initalizes board
     # height = # of rows
     # width = # of columns
@@ -150,6 +130,7 @@ class board:
         # self.grid = [[0 for x in range(height)] for y in range(width)]
         # set player 1 to go first
 
+
     # check if grid has no spots left
     # returns true if full, false otherwise
     def checkIfFull(self):
@@ -160,6 +141,7 @@ class board:
         # otherwise, return true
         return True
 
+
     # calls checkVertical, checkHorizontal, and checkDiagonal
     # if any return true, return true. If not, return false
     def checkIfWon(self, newRowIndex, newColIndex, playerNum):
@@ -169,6 +151,7 @@ class board:
             return True
         return False
 
+
     # checks if there are 3 of that player's pieces under that player's last placed piece
     # note: don't need to check above because pieces can't be above it per the game rules
     def checkVertical(self, newRowIndex, newColIndex, playerNum):
@@ -176,6 +159,7 @@ class board:
         if below + 1 >= self.goal:
             return True
         return False
+
 
     # checks to the left and right of the piece, checks if there are 4 in a row horizontally
     def checkHorizontal(self, newRowIndex, newColIndex, playerNum):
@@ -188,6 +172,7 @@ class board:
             return True
         return False
 
+
     # calls checkLeftUp2DownRight and checkLeftDown2RightUp
     # if either returns true, return true, otherwise return false
     def checkDiagonal(self, newRowIndex, newColIndex, playerNum):
@@ -197,6 +182,7 @@ class board:
             return True
         return False
 
+
     # checks to the left up and down right for matching pieces, checks if more than 4 in a row
     def checkLeftUp2RightDown(self, newRowIndex, newColIndex, playerNum):
         leftUp = self.checkDirection(newRowIndex, newColIndex, -1, -1, playerNum)
@@ -204,6 +190,7 @@ class board:
         if leftUp + rightDown + 1 >= self.goal:
             return True
         return False
+
 
     # checks to the left down and right up for matching pieces, checks if more than 4 in a row
     def checkLeftDown2RightUp(self, newRowIndex, newColIndex, playerNum):
@@ -213,6 +200,7 @@ class board:
             return True
         return False
 
+
     # takes a row index and column index and returns whether it is in bounds or not
     def inBounds(self, rowIndex, colIndex):
         if rowIndex < 0 or rowIndex > self.height - 1:
@@ -220,6 +208,7 @@ class board:
         if colIndex < 0 or colIndex > self.width - 1:
             return False
         return True
+
 
     # make a move
     # this returns the row the piece was placed in
@@ -233,6 +222,7 @@ class board:
                 # return the row
                 return row
 
+
     # prints the board
     # prints it as it should appear rather than in column-major format
     def printBoard(self):
@@ -242,12 +232,14 @@ class board:
             print()
         print()
 
-    # convert the board to a json
-    def getBoardAsJSON(self):
-        js = self.grid
 
-        js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
-        return js
+    # # convert the board to a json
+    # def getBoardAsJSON(self):
+    #     js = self.grid
+    #
+    #     js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
+    #     return js
+
 
     # colDir of -1 means to decrease the colIndex as you search
     # rowDir of 1 means to increase the rowIndex as you search
@@ -271,16 +263,9 @@ class board:
 p1error = open("player1error.txt", "w")
 p2error = open("player2error.txt", "w")
 
-# an example of how to turn the string sent to us into a json
-# j = json.loads('{"move" : "4"}')
-# an example of how to reference the column number sent to us
-# print(j["move"])
-# play a game with 6 rows, 7 columns, that needs 4 in a row to win
 height = 6
 width = 7
 goal = 4
-# gb = {}
-# gb["grid"] = [[0] * height for i in range(width)]
 
 newGame = game(height, width, goal)
 newGame.playGame()

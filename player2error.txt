@@ -8,7 +8,7 @@ player = 2
 height = 6
 {"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
 playing almost random, tried not to make a bad move
-{"move": 4}
+{"move": 2}
 Connect Four - Python
 player = 2
  width = 7
@@ -17,40 +17,7 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1]]}
-playing almost random, tried not to make a bad move
-{"move": 3}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1]]}
-playing almost random, tried not to make a bad move
-{"move": 6}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 1]]}
-playing almost random, tried not to make a bad move
-{"move": 4}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 1]]}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
 playing almost random, tried not to make a bad move
 {"move": 0}
 Connect Four - Python
@@ -61,7 +28,30 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 1]]}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
 playing almost random, tried not to make a bad move
 {"move": 2}
 Connect Four - Python
@@ -72,46 +62,11 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 1]]}
-playing almost random, tried not to make a bad move
-{"move": 6}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-hori winning setup move not on bottom
-playing almost random, tried not to make a bad move
-{"move": 0}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-hori winning setup move not on bottom
-hori winning setup move not on bottom
-playing almost random, tried not to make a bad move
-{"move": 3}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 1, 2, 1], [0, 0, 0, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-forwardslash losing move
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1]]}
+backslash losing move IF WE SET IT UP
+hori losing move on bottom
 playing defence
-{"move": 3}
+{"move": 4}
 Connect Four - Python
 player = 2
  width = 7
@@ -120,8 +75,37 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 1, 2, 1], [0, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-found 01100 at 3
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+playing ok
+{"move": 2}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom
+playing defence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 1, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 1]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+found 01010 at 3
 playing ok
 {"move": 3}
 Connect Four - Python
@@ -132,24 +116,26 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-forwardslash losing move
-found 01100 at 3
-playing defence
-{"move": 1}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 0, 2, 1, 1], [0, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
+{"grid": [[0, 0, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 1, 1]]}
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 0, 0, 2, 2, 1], [0, 0, 0, 0, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
-playing defence
-{"move": 2}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 5}
 Connect Four - Python
 player = 2
  width = 7
@@ -158,22 +144,11 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 0, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 1]]}
-hori losing move not on bottom
+{"grid": [[0, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 1, 2, 2, 2, 1], [0, 0, 0, 0, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
-playing defence
-{"move": 1}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[0, 0, 0, 0, 2, 2], [0, 2, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 1, 2, 2, 1]]}
-hori losing move not on bottom IF WE SET IT UP
-forwardslash losing move IF WE SET IT UP
+hori winning setup move not on bottom
 playing almost random, tried not to make a bad move
 {"move": 0}
 Connect Four - Python
@@ -184,11 +159,14 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 1, 2, 2, 2], [0, 2, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 1, 2, 2, 1]]}
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 1, 2, 2, 2, 1], [0, 0, 0, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
-forwardslash losing move IF WE SET IT UP
-playing almost random, tried not to make a bad move
-{"move": 1}
+hori winning setup move not on bottom
+hori winning setup move not on bottom
+playing defence
+{"move": 6}
 Connect Four - Python
 player = 2
  width = 7
@@ -197,24 +175,12 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[0, 0, 1, 2, 2, 2], [2, 2, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 1, 1, 2, 2, 1]]}
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 1, 2, 2, 2, 1], [0, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
-hori losing move not on bottom IF WE SET IT UP
-forwardslash losing move IF WE SET IT UP
-playing almost random, tried not to make a bad move
-{"move": 0}
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-Connect Four - Python
-player = 2
- width = 7
-height = 6
-{"grid": [[1, 2, 1, 2, 2, 2], [2, 2, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 0], [0, 1, 1, 2, 2, 1]]}
-hori losing move not on bottom IF WE SET IT UP
-hori losing move not on bottom IF WE SET IT UP
-forwardslash losing move IF WE SET IT UP
+hori winning setup move not on bottom
+hori winning setup move not on bottom
 playing almost random, tried not to make a bad move
 {"move": 6}
 Connect Four - Python
@@ -225,12 +191,70 @@ Connect Four - Python
 player = 2
  width = 7
 height = 6
-{"grid": [[1, 2, 1, 2, 2, 2], [2, 2, 1, 2, 1, 1], [2, 1, 1, 1, 2, 1], [2, 1, 2, 2, 2, 1], [1, 1, 1, 2, 1, 2], [0, 0, 0, 0, 0, 1], [2, 1, 1, 2, 2, 1]]}
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [1, 1, 2, 2, 2, 1], [2, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
+hori winning setup move not on bottom
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 2}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [2, 2, 2, 1, 1, 2], [0, 0, 0, 2, 1, 1], [0, 0, 1, 1, 1, 2], [1, 1, 2, 2, 2, 1], [2, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
 hori losing move not on bottom IF WE SET IT UP
-forwardslash losing move IF WE SET IT UP
-playing random
-{"move": 5}
+playing defence
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [2, 2, 2, 1, 1, 2], [0, 0, 1, 2, 1, 1], [0, 2, 1, 1, 1, 2], [1, 1, 2, 2, 2, 1], [2, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 0], [2, 2, 2, 1, 1, 2], [0, 1, 1, 2, 1, 1], [2, 2, 1, 1, 1, 2], [1, 1, 2, 2, 2, 1], [2, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 3}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[2, 1, 1, 2, 2, 2], [0, 0, 0, 0, 0, 1], [2, 2, 2, 1, 1, 2], [2, 1, 1, 2, 1, 1], [2, 2, 1, 1, 1, 2], [1, 1, 2, 2, 2, 1], [2, 1, 2, 1, 1, 1]]}
+backslash losing move IF WE SET IT UP
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom
+playing defence
+{"move": 1}
 Connect Four - Python
 player = 2
  width = 7
