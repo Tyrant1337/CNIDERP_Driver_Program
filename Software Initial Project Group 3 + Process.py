@@ -88,12 +88,12 @@ class game:
 
     def getMove(self, turn):
         player1 = Popen(
-            [executable, "connect-four-naive.py", "1", "1", str(self.width), str(self.width), str(self.height),
+            [executable, "connect-four-group4.py", "1", "1", str(self.width), str(self.width), str(self.height),
              str(self.height)],
             stdin=PIPE, stdout=PIPE, stderr=p1error)
 
         player2 = Popen(
-            [executable, "connect-four-naive.py", "2", "2", str(self.width), str(self.width), str(self.height),
+            [executable, "connect-four-group4.py", "2", "2", str(self.width), str(self.width), str(self.height),
              str(self.height)],
             stdin=PIPE, stdout=PIPE, stderr=p2error)
         players = player1, player2
