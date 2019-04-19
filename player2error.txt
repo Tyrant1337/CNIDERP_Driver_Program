@@ -1,5 +1,64 @@
 Connect Four - Python
-Traceback (most recent call last):
-  File "connect-four-naive.py", line 10, in <module>
-    width = int(sys.argv[4]) # --width <w>
-IndexError: list index out of range
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1]]}
+{"move": 3}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1]]}
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1]]}
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1]]}
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1]]}
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 2, 2], [0, 0, 0, 1, 1, 1]]}
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6

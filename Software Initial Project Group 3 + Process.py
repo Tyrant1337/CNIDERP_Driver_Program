@@ -17,12 +17,17 @@ class game:
     def __init__(self, height, width, goal):
         self.gBoard = board(height, width, goal)
         # start the 2 player processes here
+
+
+        self.height = height
+        self.width = width
+        self.goal = goal
         # save any necessary variables for the player processes here
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
     def playTurn(self, playerNum):
         # get the move from the player (currently just randomly generates a valid column)
-        colIndex = self.getMove()
+        colIndex = self.getMove(playerNum)
         # add the move to the board, which returns the row it was placed
         rowIndex = self.gBoard.makeMove(colIndex, playerNum)
         # print the board to the screen
@@ -42,10 +47,7 @@ class game:
 
     # this is called once to play the game
     def playGame(self):
-        player1 = Popen([executable, "connect-four-naive.py", "1", str(self.gBoard.width), str(self.gBoard.height)],
-                        stdin=PIPE, stdout=PIPE, stderr=p1error)
-        player2 = Popen([executable, "connect-four-naive.py", "2", str(self.gBoard.width), str(self.gBoard.width)],
-                        stdin=PIPE, stdout=PIPE, stderr=p2error)
+
 
         # initalize turnCode
         turnCode = 0
@@ -73,23 +75,57 @@ class game:
                 else:
                     turn = 1
 
+    def draw_grid(self):
+        print()
+        for y in range(self.height):
+            for x in range(0, self.width):
+                print(self.gBoard.grid["grid"][x][y], end=' '),
+            print()
+
     # this gets the move from the player whose turn it is
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
 
-    def getMove(self):
+    def getMove(self, turn):
+        player1 = Popen(
+            [executable, "connect-four-naive.py", "1", "1", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=p1error)
+
+        player2 = Popen(
+            [executable, "connect-four-naive.py", "2", "2", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=p2error)
+        players = player1, player2
+        turn -= 1
+
         while (True):
-            # generate a random number in bounds (will be replaced by getting a move from the player process)
-            ranNum = random.randint(0, self.gBoard.width - 1)
-            # check if number is
-            if self.checkIfValid(ranNum):
-                return ranNum
+            # send current board to player on stdout
+            myboard = json.dumps(self.gBoard.grid)
+            myboard = (myboard + '\n').encode("utf-8")
+
+            players[turn].stdin.write(myboard)
+            players[turn].stdin.flush()
+
+            # self.draw_grid()
+
+            # self.gBoard.printBoard()
+
+            # get move from player program
+            move = json.loads(players[turn].stdout.readline())
+            move = int(move["move"])
+            print("Player " + str(turn + 1) + " move: " + str(move))
+            # # generate a random number in bounds (will be replaced by getting a move from the player process)
+            # ranNum = random.randint(0, self.gBoard.width - 1)
+            # # check if number is
+            if self.checkIfValid(move):
+                return move
 
     # tests whether move sent to driver is valid
     # returns true if valid and false otherwise
     def checkIfValid(self, column):
         # if an inbounds column and if that columns' highest row is unoccupied
-        if column < self.gBoard.width and column >= 0 and self.gBoard.grid[column][0] == 0:
+        if column < self.gBoard.width and column >= 0 and self.gBoard.grid["grid"][column][0] == 0:
             return True
         return False
 
@@ -104,11 +140,14 @@ class board:
     # width = # of columns
     # goal = how many to get in a row
     def __init__(self, height, width, goal):
+        self.grid = {}
+        self.grid["grid"] = [[0] * height for i in range(width)]
+
         self.height = height
         self.width = width
         self.goal = goal
         # initialize grid at correct width and height
-        self.grid = [[0 for x in range(height)] for y in range(width)]
+        # self.grid = [[0 for x in range(height)] for y in range(width)]
         # set player 1 to go first
 
     # check if grid has no spots left
@@ -116,7 +155,7 @@ class board:
     def checkIfFull(self):
         for column in range(0, self.width):
             # if any column's highest piece is 0, return false
-            if self.grid[column][0] == 0:
+            if self.grid["grid"][column][0] == 0:
                 return False
         # otherwise, return true
         return True
@@ -188,9 +227,9 @@ class board:
         # starting from lowest column...
         for row in range(self.height - 1, -1, -1):
             # if row is empty...
-            if self.grid[column][row] == 0:
+            if self.grid["grid"][column][row] == 0:
                 # put the move there
-                self.grid[column][row] = playerNum
+                self.grid["grid"][column][row] = playerNum
                 # return the row
                 return row
 
@@ -199,7 +238,7 @@ class board:
     def printBoard(self):
         for row in range(0, self.height):
             for column in range(0, self.width):
-                print(self.grid[column][row], end=" ")
+                print(self.grid["grid"][column][row], end=" ")
             print()
         print()
 
@@ -222,7 +261,7 @@ class board:
             if self.inBounds(nextRowIndex, nextColIndex) == False:
                 return count
                 # if the spot is not the player whose turn it is
-            if self.grid[nextColIndex][nextRowIndex] != playerNum:
+            if self.grid["grid"][nextColIndex][nextRowIndex] != playerNum:
                 # print(count)
                 return count
         # if it reaches here, have already found a win, return goal-1 which with the new spot is a win
@@ -233,11 +272,17 @@ p1error = open("player1error.txt", "w")
 p2error = open("player2error.txt", "w")
 
 # an example of how to turn the string sent to us into a json
-j = json.loads('{"move" : "4"}')
+# j = json.loads('{"move" : "4"}')
 # an example of how to reference the column number sent to us
-print(j["move"])
+# print(j["move"])
 # play a game with 6 rows, 7 columns, that needs 4 in a row to win
-newGame = game(6, 7, 4)
+height = 6
+width = 7
+goal = 4
+# gb = {}
+# gb["grid"] = [[0] * height for i in range(width)]
+
+newGame = game(height, width, goal)
 newGame.playGame()
 
 p1error.close()
