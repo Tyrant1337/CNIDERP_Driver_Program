@@ -205,9 +205,9 @@ class board:
 
     # convert the board to a json
     def getBoardAsJSON(self):
-        a = self.grid
+        js = self.grid
 
-        j = json.dumps(''.join(str(r) for v in a for r in v))
+        js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
         return j
 
     # colDir of -1 means to decrease the colIndex as you search
