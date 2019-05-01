@@ -1,0 +1,204 @@
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+{"move": 3}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2]]}
+hori winning setup move on bottom
+hori winning setup move on bottom
+hori winning setup move on bottom
+playing almost random, tried not to make a bad move
+{"move": 1}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 2, 1, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 2, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 4}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 1}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 2, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 2, 2, 1, 2]]}
+playing defence
+{"move": 2}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori losing move not on bottom
+found 02200 at 4
+playing defence
+{"move": 1}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 2, 1], [0, 0, 2, 2, 1, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 0, 1, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 2, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori losing move not on bottom
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 4}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 2, 1, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 1, 2], [0, 0, 0, 2, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 4}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[0, 2, 1, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 2, 1, 1, 1, 2], [0, 0, 0, 2, 2, 1], [0, 0, 2, 2, 1, 2]]}
+hori winning setup move not on bottom
+playing almost random, tried not to make a bad move
+{"move": 0}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[1, 2, 1, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 2, 1, 2, 2, 2], [0, 0, 0, 2, 1, 1], [0, 2, 1, 1, 1, 2], [0, 0, 0, 2, 2, 1], [0, 0, 2, 2, 1, 2]]}
+forwardslash losing move IF WE SET IT UP
+hori winning setup move not on bottom
+found 02020 at 3
+playing almost random, tried not to make a bad move
+{"move": 5}
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+Connect Four - Python
+player = 1
+ width = 7
+height = 6
+{"grid": [[1, 2, 1, 2, 1, 1], [0, 0, 2, 1, 1, 1], [0, 2, 1, 2, 2, 2], [0, 0, 2, 2, 1, 1], [0, 2, 1, 1, 1, 2], [0, 0, 1, 2, 2, 1], [0, 0, 2, 2, 1, 2]]}
+forwardslash losing move IF WE SET IT UP
+forwardslash winning move
+forwardslash losing move IF WE SET IT UP
+forwardslash winning move
+found 02020 at 3
+playing offence
+{"move": 3}
