@@ -1,27 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 30 12:46:56 2019
+
+@author: bamar
+"""
+
 import json
 from subprocess import Popen, PIPE
 from sys import executable, argv
 
 
 class Game:
-    def __init__(self, height, width, goal):
+    def __init__(self, height, width, goal, playerProgram1, playerProgram2):
         # pass as argument for player program file
         # self.playerfile = playerfile
         self.gBoard = Board(height, width, goal)
         self.height = height
         self.width = width
         self.goal = goal
+        self.playerProgram1 = playerProgram1
+        self.playerProgram2 = playerProgram2
         self.p1error = open("player1error.txt", "w")
         self.p2error = open("player2error.txt", "w")
-        self.player1 = Popen(
-            [executable, "connect-four-group4.py", "1", "1", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
-
-        self.player2 = Popen(
-            [executable, "connect-four-group4.py", "2", "2", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
 
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
@@ -84,8 +84,16 @@ class Game:
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
     def getMove(self, turn):
+        player1 = Popen(
+            [executable, self.playerProgram1, "1", "1", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
 
-        players = self.player1, self.player2
+        player2 = Popen(
+            [executable, self.playerProgram2, "2", "2", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
+        players = player1, player2
         turn -= 1
 
         while (True):
@@ -245,6 +253,24 @@ class Board:
                 return count
         # if it reaches here, have already found a win, return goal-1 which with the new spot is a win
         return self.goal - 1
+    
+def playTournament(height, width, goal, playerProgram1, playerProgram2):
+    #results = [player1wins, player2wins, tie]
+    results = [0,0,0]
+    for each in range(1,21):
+        print("Staring game " + str(each))
+        newGame = Game(height, width, goal, playerProgram1, playerProgram2)
+        result = newGame.playGame()
+        results[result-1]+=1
+    print("Player 1 won " + str(results[0]) + " times,")
+    print("Player 2 win " + str(results[1]) + " times, ")
+    print(" and there were " + str(results[2]) + " ties.")
+    if results[0] > results[1]:
+        print("Player 1 wins")
+    elif results [1] > results[0]:
+        print("Player 2 wins")
+    else:
+        print("It is a tie")
 
 
 # playerfile = str(argv[0])
@@ -253,5 +279,27 @@ height = 6
 width = 7
 goal = 4
 
-newGame = Game(height, width, goal)
-newGame.playGame()
+#menu
+print("Welcome to Connect 4")
+playerProgram = input("Choose your player program")
+print()
+while(True):
+    print("Game modes:")
+    print("1. Single game mode")
+    print("2. Tournament mode")
+    print("3. Exit")
+    mode = input("choose which you want to play")
+    if int(mode) < 1 or int(mode) >3:
+        print("invalid input")
+        continue
+    if int(mode) == 1:
+        newGame = Game(height, width, goal, playerProgram, playerProgram)
+        newGame.playGame()        
+    if int(mode) == 2:
+        print("The current player program will be used for player 1.")
+        playerProgram2 = input("Enter the player program you want to use for player 2")
+        playTournament(height, width, goal, playerProgram, playerProgram2)
+    if int(mode) == 3:
+        break
+
+
