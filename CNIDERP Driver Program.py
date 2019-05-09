@@ -69,11 +69,11 @@ class Game:
                 else:
                     turn = 1
 
-
     # this gets the move from the player whose turn it is
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
     def getMove(self, turn):
+
         players = self.player1, self.player2
         turn -= 1
 
@@ -131,9 +131,9 @@ class Board:
     # calls checkVertical, checkHorizontal, and checkDiagonal
     # if any return true, return true. If not, return false
     def checkIfWon(self, newRowIndex, newColIndex, playerNum):
-        if self.checkVertical(newRowIndex, newColIndex, playerNum) or \
-                self.checkHorizontal(newRowIndex, newColIndex, playerNum) or \
-                self.checkDiagonal(newRowIndex, newColIndex, playerNum):
+        if self.checkVertical(newRowIndex, newColIndex, playerNum) or self.checkHorizontal(newRowIndex, newColIndex,
+                                                                                           playerNum) or self.checkDiagonal(
+            newRowIndex, newColIndex, playerNum):
             return True
         return False
 
@@ -159,8 +159,9 @@ class Board:
     # calls checkLeftUp2DownRight and checkLeftDown2RightUp
     # if either returns true, return true, otherwise return false
     def checkDiagonal(self, newRowIndex, newColIndex, playerNum):
-        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or \
-                self.checkLeftDown2RightUp(newRowIndex, newColIndex, playerNum):
+        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or self.checkLeftDown2RightUp(newRowIndex,
+                                                                                                         newColIndex,
+                                                                                                         playerNum):
             return True
         return False
 
@@ -261,17 +262,20 @@ height = 6
 width = 7
 goal = 4
 
-# menu
 print("Welcome to Connect 4")
-playerProgram = input("Choose your player program")
-print()
-while (True):
+
+playerProgram = input("Enter your player program: ")
+
+# menu
+while True:
+    print()
     print("Game modes:")
-    print("1. Single game mode")
-    print("2. Tournament mode")
-    print("3. Exit")
-    mode = input("choose which you want to play")
-    if int(mode) < 1 or int(mode) > 3:
+    print("1. Single Game Mode")
+    print("2. Tournament Mode")
+    print("3. Change Board Size")
+    print("4. Exit")
+    mode = input("choose which you want to play: ")
+    if int(mode) < 1 or int(mode) > 4:
         print("invalid input")
         continue
     if int(mode) == 1:
@@ -282,12 +286,19 @@ while (True):
         p1error.close()
         p2error.close()
     if int(mode) == 2:
-        print("The current player program will be used for player 1.")
-        playerProgram2 = input("Enter the player program you want to use for player 2")
+        print("The current player program [" + playerProgram + "] will be used for player 1.")
+        playerProgram2 = input("Enter the player program you want to use for player 2: ")
         p1error = open("player1error.txt", "w")
         p2error = open("player2error.txt", "w")
         playTournament(height, width, goal, playerProgram, playerProgram2)
         p1error.close()
         p2error.close()
     if int(mode) == 3:
+        print()
+        print("Set the Board Size and Goal")
+        height = int(input("Enter height: "))
+        width = int(input("Enter width: "))
+        goal = int(input("Enter goal (length of string to win): "))
+        print()
+    if int(mode) == 4:
         break
