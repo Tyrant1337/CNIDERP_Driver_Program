@@ -20,17 +20,15 @@ class Game:
         self.goal = goal
         self.playerProgram1 = playerProgram1
         self.playerProgram2 = playerProgram2
-        self.p1error = open("player1error.txt", "w")
-        self.p2error = open("player2error.txt", "w")
         self.player1 = Popen(
             [executable, self.playerProgram1, "1", "1", str(self.width), str(self.width), str(self.height),
              str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
+            stdin=PIPE, stdout=PIPE, stderr=p1error)
 
         self.player2 = Popen(
             [executable, self.playerProgram2, "2", "2", str(self.width), str(self.width), str(self.height),
              str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
+            stdin=PIPE, stdout=PIPE, stderr=p2error)
 
 
 
@@ -294,8 +292,12 @@ while(True):
         print("invalid input")
         continue
     if int(mode) == 1:
+        p1error = open("player1error.txt", "w")
+        p2error = open("player2error.txt", "w")
         newGame = Game(height, width, goal, playerProgram, playerProgram)
-        newGame.playGame()        
+        newGame.playGame()
+        p1error.close()
+        p2error.close()
     if int(mode) == 2:
         print("The current player program will be used for player 1.")
         playerProgram2 = input("Enter the player program you want to use for player 2")
