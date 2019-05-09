@@ -22,6 +22,16 @@ class Game:
         self.playerProgram2 = playerProgram2
         self.p1error = open("player1error.txt", "w")
         self.p2error = open("player2error.txt", "w")
+        self.player1 = Popen(
+            [executable, self.playerProgram1, "1", "1", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
+
+        self.player2 = Popen(
+            [executable, self.playerProgram2, "2", "2", str(self.width), str(self.width), str(self.height),
+             str(self.height)],
+            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
+
 
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
@@ -84,16 +94,7 @@ class Game:
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
     def getMove(self, turn):
-        player1 = Popen(
-            [executable, self.playerProgram1, "1", "1", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p1error)
-
-        player2 = Popen(
-            [executable, self.playerProgram2, "2", "2", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=self.p2error)
-        players = player1, player2
+        players = self.player1, self.player2
         turn -= 1
 
         while (True):
