@@ -294,11 +294,15 @@ while True:
         p1error.close()
         p2error.close()
     if int(mode) == 3:
-        print()
-        print("Set the Board Size and Goal")
-        height = int(input("Enter height: "))
-        width = int(input("Enter width: "))
-        goal = int(input("Enter goal (length of string to win): "))
-        print()
+        height = 'a'
+        width = 'a'
+        goal = 'a'
+        while not height.isdigit() or not width.isdigit() or not goal.isdigit() or not goal <= width :
+            print()
+            print("Set the Board Size and Goal")
+            height = int(input("Enter height: "))
+            width = int(input("Enter width: "))
+            goal = int(input("Enter goal (length of string to win): "))
+            print()
     if int(mode) == 4:
         break
