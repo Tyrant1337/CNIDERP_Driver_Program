@@ -1,3 +1,5 @@
+# Team 3
+
 import json
 from subprocess import Popen, PIPE
 from sys import executable
@@ -11,13 +13,11 @@ class Game:
         self.goal = goal
         self.player1 = Popen(
             [executable, playerProgram1, "1", "1", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=p1error)
+             str(self.height)], stdin=PIPE, stdout=PIPE, stderr=p1error)
 
         self.player2 = Popen(
             [executable, playerProgram2, "2", "2", str(self.width), str(self.width), str(self.height),
-             str(self.height)],
-            stdin=PIPE, stdout=PIPE, stderr=p2error)
+             str(self.height)], stdin=PIPE, stdout=PIPE, stderr=p2error)
 
     # return 1 if player 1 wins, 2 if player 2 wins, 0 if game continues, 3 if no moves left
     def playTurn(self, playerNum):
@@ -48,7 +48,7 @@ class Game:
         # player 1 goes first
         turn = 1
         # continuously loop until game ends
-        while (True):
+        while True:
             # play the turn, which returns the turn code
             turnCode = self.playTurn(turn)
             # if it's 1 or 2, that player won
@@ -73,11 +73,10 @@ class Game:
     # right now it just generates a random valid column number
     # uses checkIfValid to make sure move is valid
     def getMove(self, turn):
-
         players = self.player1, self.player2
         turn -= 1
 
-        while (True):
+        while True:
             # send current board to player on stdout
             myboard = json.dumps(self.gBoard.grid)
             myboard = (myboard + '\n').encode("utf-8")
@@ -110,13 +109,9 @@ class Board:
     def __init__(self, height, width, goal):
         self.grid = {}
         self.grid["grid"] = [[0] * height for i in range(width)]
-
         self.height = height
         self.width = width
         self.goal = goal
-        # initialize grid at correct width and height
-        # self.grid = [[0 for x in range(height)] for y in range(width)]
-        # set player 1 to go first
 
     # check if grid has no spots left
     # returns true if full, false otherwise
@@ -131,9 +126,9 @@ class Board:
     # calls checkVertical, checkHorizontal, and checkDiagonal
     # if any return true, return true. If not, return false
     def checkIfWon(self, newRowIndex, newColIndex, playerNum):
-        if self.checkVertical(newRowIndex, newColIndex, playerNum) or self.checkHorizontal(newRowIndex, newColIndex,
-                                                                                           playerNum) or self.checkDiagonal(
-            newRowIndex, newColIndex, playerNum):
+        if self.checkVertical(newRowIndex, newColIndex, playerNum) or \
+                self.checkHorizontal(newRowIndex, newColIndex, playerNum) or \
+                self.checkDiagonal(newRowIndex, newColIndex, playerNum):
             return True
         return False
 
@@ -159,9 +154,8 @@ class Board:
     # calls checkLeftUp2DownRight and checkLeftDown2RightUp
     # if either returns true, return true, otherwise return false
     def checkDiagonal(self, newRowIndex, newColIndex, playerNum):
-        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or self.checkLeftDown2RightUp(newRowIndex,
-                                                                                                         newColIndex,
-                                                                                                         playerNum):
+        if self.checkLeftUp2RightDown(newRowIndex, newColIndex, playerNum) or \
+                self.checkLeftDown2RightUp(newRowIndex, newColIndex, playerNum):
             return True
         return False
 
@@ -210,13 +204,6 @@ class Board:
             print()
         print()
 
-    # # convert the board to a json
-    # def getBoardAsJSON(self):
-    #     js = self.grid
-    #
-    #     js = json.dumps(''.join(str(item) for sublist in js for item in sublist))
-    #     return js
-
     # colDir of -1 means to decrease the colIndex as you search
     # rowDir of 1 means to increase the rowIndex as you search
     def checkDirection(self, newRowIndex, newColIndex, colDir, rowDir, playerNum):
@@ -245,28 +232,28 @@ def playTournament(height, width, goal, playerProgram1, playerProgram2):
         result = newGame.playGame()
         results[result - 1] += 1
     print("Player 1 won " + str(results[0]) + " times,")
-    print("Player 2 win " + str(results[1]) + " times, ")
+    print("Player 2 won " + str(results[1]) + " times, ")
     print(" and there were " + str(results[2]) + " ties.")
     if results[0] > results[1]:
-        print("Player 1 wins")
+        print("Player 1 wins the tournament")
     elif results[1] > results[0]:
-        print("Player 2 wins")
+        print("Player 2 wins the tournament")
     else:
         print("It is a tie")
 
 
+# Globals
 p1error = open("player1error.txt", "w")
 p2error = open("player2error.txt", "w")
-
 height = 6
 width = 7
 goal = 4
 
+# Start the Program
 print("Welcome to Connect 4")
-
 playerProgram = input("Enter your player program: ")
 
-# menu
+# Menu
 while True:
     print()
     print("Game modes:")
@@ -274,10 +261,13 @@ while True:
     print("2. Tournament Mode")
     print("3. Change Board Size")
     print("4. Exit")
-    mode = input("choose which you want to play: ")
+    mode = input("Enter: ")
+
     if int(mode) < 1 or int(mode) > 4:
         print("invalid input")
+        print()
         continue
+
     if int(mode) == 1:
         p1error = open("player1error.txt", "w")
         p2error = open("player2error.txt", "w")
@@ -285,6 +275,7 @@ while True:
         newGame.playGame()
         p1error.close()
         p2error.close()
+
     if int(mode) == 2:
         print("The current player program [" + playerProgram + "] will be used for player 1.")
         playerProgram2 = input("Enter the player program you want to use for player 2: ")
@@ -293,6 +284,7 @@ while True:
         playTournament(height, width, goal, playerProgram, playerProgram2)
         p1error.close()
         p2error.close()
+
     if int(mode) == 3:
         print()
         print("Set the Board Size and Goal")
@@ -300,5 +292,6 @@ while True:
         width = int(input("Enter width: "))
         goal = int(input("Enter goal (length of string to win): "))
         print()
+
     if int(mode) == 4:
         break

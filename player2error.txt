@@ -1,0 +1,723 @@
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, Traceback (most recent call last):
+  File "Players/C4Coolio.py", line 171, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+laying defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+hori losing move on bottom
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 2, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+hori losing move not on bottom
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 1}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 2, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+forwardslash winning move
+hori losing move not on bottom
+hori losing move not on bottom
+playing offence
+{"move": 1}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 3
+playing ok
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+playing defence
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+playing defence
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 2, 2], [0, 0, 2, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 2, 2], [0, 0, 2, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 2, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom
+hori losing move on bottom
+found 02200 at 2
+playing offence
+{"move": 2}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+hori losing move on bottom
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 1, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+playing defence
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 2, 2], [0, 0, 2, 1, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom
+found 02200 at 2
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2]]}
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+hori losing move on bottom
+found 02200 at 2
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 0, 1, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+playing defence
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 2, 2], [0, 0, 2, 1, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 2, 2], [0, 0, 2, 1, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+hori losing move on bottom
+found 02200 at 2
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+backslash losing move
+hori losing move not on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 2}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori losing move not on bottom
+found 02200 at 2
+playing defence
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing defence
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 1, 2, 2], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom IF WE SET IT UP
+hori winning move not on bottom
+forwardslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+playing offence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 2, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 2, 1, 1, 1], [0, 0, 2, 2, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+found 02200 at 3
+playing offence
+{"move": 4}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 2, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 2, 1, 2, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 1, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+forwardslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 2, 2, 1, 2, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 1, 2, 1], [0, 0, 0, 0, 1, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom IF WE SET IT UP
+forwardslash losing move IF WE SET IT UP
+hori losing move not on bottom
+found 02200 at 2
+playing defence
+{"move": 5}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 0}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+playing defence
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 2, 1, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom
+hori losing move not on bottom
+found 02200 at 2
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 1}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+found 00110 at 3
+playing ok
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+found 01100 at 2
+found 00110 at 3
+playing defence
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 2, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom
+found 02200 at 2
+found 01100 at 2
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 2, 1, 1, 1], [2, 2, 2, 1, 1, 1], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 2, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+hori losing move not on bottom
+forwardslash losing move IF WE SET IT UP
+hori losing move not on bottom
+found 02200 at 2
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 1}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+forwardslash winning move
+hori losing move not on bottom
+hori losing move on bottom
+found 02200 at 2
+playing offence
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+found 01100 at 2
+playing ok
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move not on bottom
+hori losing move not on bottom IF WE SET IT UP
+found 02200 at 2
+playing defence
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2], [0, 0, 2, 2, 1, 2], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0]]}
+forwardslash winning move
+hori losing move not on bottom
+hori losing move on bottom
+found 02200 at 2
+playing offence
+{"move": 0}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 1}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 2}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 2, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+hori losing move on bottom
+playing defence
+{"move": 5}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 2, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+playing almost random, tried not to make a bad move
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2], [0, 0, 0, 1, 2, 1], [0, 0, 0, 2, 1, 1], [0, 0, 0, 1, 2, 1], [0, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0]]}
+backslash losing move IF WE SET IT UP
+forwardslash winning move
+backslash winning move
+forwardslash losing move IF WE SET IT UP
+playing offence
+{"move": 2}
+Connect Four - Python
+player = 2
+ width = 7
+height = 6
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 2]]}
+playing almost random, tried not to make a bad move
+{"move": 6}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2]]}
+playing defence
+{"move": 3}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2]]}
+found 00110 at 4
+playing ok
+{"move": 4}
+{"grid": [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1], [0, 0, 2, 1, 1, 1], [0, 0, 0, 0, 2, 1], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 2, 2]]}
+hori losing move on bottom
+hori losing move on bottom
+multiple opponent winning moves, no bueno
+playing defence
+{"move": 1}
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt    for line in sys.stdin:
+KeyboardInterruptTraceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+    for line in sys.stdin:
+KeyboardInterrupt
+    for line in sys.stdin:Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+
+    for line in sys.stdin:
+KeyboardInterrupt
+
+    for line in sys.stdin:
+KeyboardInterrupt
+
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+Traceback (most recent call last):
+  File "Players/connect-four-group4.py", line 327, in <module>
+    for line in sys.stdin:
+KeyboardInterrupt    for line in sys.stdin:
+KeyboardInterrupt
+
